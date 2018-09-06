@@ -7,7 +7,7 @@ class ESClient(object):
     ES_HOST = os.environ.get('ES_HOST',
                              'https://search-data-insight-p6k37focny45vkoxg62ikpduli.eu-west-1.es.amazonaws.com/')
     ES_PORT = int(os.environ.get('ES_PORT', '443'))
-    ES_INDEX = os.environ.get('ES_INDEX', 'tweets')
+    ES_INDEX = os.environ.get('ES_INDEX', 'twits')
 
     es = Elasticsearch([ES_HOST],
                        port=ES_PORT,
